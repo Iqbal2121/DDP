@@ -42,12 +42,12 @@ if Total_produk > 0 :
                     else :
                         if len(password) < 8 :
                             print("Password tidak valid. Silahkan ulangi.")
+            if kartu_anggota == "Y" :   
                 while True :
                     jenis_kartu = input("Masukkan level kepesertaan Anda : ")
                     if jenis_kartu == "Silver" and Total_produk < 5 :
                         print("Selamat! Anda mendapatkan diskon sebesar 5%")
                         diskon_harga = Total_harga * 0.05
-                        break
                     elif jenis_kartu == "Silver" and Total_produk >= 5 :
                         print("Selamat! Anda mendapatkan diskon sebesar 10%")
                         diskon_harga = Total_harga * 0.1
@@ -66,6 +66,6 @@ if Total_produk > 0 :
                     else :
                         print("Level kepesertaan anda tidak valid. Silahkan ulangi.")
 
-                print("")  
-                print("Total harga keseluruhan yang harus dibayar :", Total_harga - diskon_harga)
-                print("Terima kasih telah berbelanja di NFElectronics.")
+                        print("")  
+                        print("Total harga keseluruhan yang harus dibayar :", Total_harga - diskon_harga)
+                        print("Terima kasih telah berbelanja di NFElectronics.")                
